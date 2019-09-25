@@ -1,0 +1,16 @@
+/*Dalam kasus ini saya akan mempelajari apa yang akan terjadi jika beberapa kode CSS yang dibuat saling menimpa.*/
+p {
+    color:red;
+    }
+    div p {
+    color:green;
+    }
+    #aaa{
+    color:orange;
+    }
+    body div p {
+    color:yellow;
+    }
+    div p.kalimat {
+    color:silver;
+    }

@@ -1,0 +1,35 @@
+<!--Urutan Prioritas Selector = Di dalam CSS, sebuah tag bisa memiliki lebih dari dari satu kode CSS. Dalam
+tutorial mengenal Urutan Prioritas Selector CSS ini kita akan membahas urutan atau prioritas dari kode CSS yang akan dipakai oleh tag HTML, atau dikenal dengan
+istilah Cascading-->
+<!--Pengertian Cascading dari CSS
+CSS adalah singkatan dari Cascading Style Sheet, dimana cascade dalam bahasa inggris dapat berarti air terjun kecil yang berjatuhan dari atas ke bawah. Di
+dalam CSS, maksud dari cascading ini adalah style yang dapat ditimpa atau menimpa style lain sesuai urutannya, atau kita sebut saja sebagai prioritas CSS.-->
+
+<!DOCTYPE html>
+<!--Urutan Prioritas Selector-->
+<html>
+<head>
+    <!--link rel dibawah digunakan untuk memanggil design dari file cascading.css-->
+        <link rel="stylesheet" type="text/css" href="cascading.css">
+    <!--Lihat bahwa sebelum tag <style>, disini “memanggil” file prioritas.css terlebih dahulu. Lalu pada tag <h2> yang kedua saya menambahkan atribut
+“color:green” pada tag <h2>.
+Jika kita menjalankan kode HTML diatas, warna text pada kedua tag <h2> akan bewarna merah dan biru, dan tidak ada yang bewarna biru.-->
+<title>Contoh Kasus Cascading CSS</title>
+<link rel="stylesheet" type="text/css"
+href="prioritas.css">
+<style type="text/css">
+h2 {
+color:red;
+}
+</style>
+</head>
+<body>
+<h2>
+Akan berwarna apa saya?..1
+</h2>
+<h2 style="color:green">
+Akan berwarna apa saya?..2
+</h2>
+</body>
+
+</html>

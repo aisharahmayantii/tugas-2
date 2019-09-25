@@ -1,0 +1,7 @@
+/*membuat sebuah selector pada bagian awal CSS , disini menggunakan font - size 14pt*/
+body {
+    font-size:14pt;
+    /*Disini menggunakan background dengan warna "pink"*/
+    background-color: pink ;
+
+}
